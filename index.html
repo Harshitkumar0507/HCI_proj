@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Smart UI Logo" style="height: 40px;">
+            <span style="font-size: 24px; color: #fff; margin-left: 10px;">Smart UI</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Courses</a></li>
+            <li><a href="index.html">Blog</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='signup.html'">Signup</button>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1><span id="typed-text"></span></h1>
+        <button class="btn-get-started" onclick="location.href='signup.html'"" >GET STARTED</button>
+
+    </header>
+    
+    
+
+    <!-- Main Section with Course Cards -->
+    <section class="main-content">
+        <h2>Top Courses</h2>
+        <div class="course-cards">
+            <div class="card">
+                <img src="1.jpg" alt="Science Course">
+                <h3>Science</h3>
+                <p>The Ultimate Science Course</p>
+            </div>
+            <div class="card">
+                <img src="6.jpeg" alt="Maths Course">
+                <h3>Maths</h3>
+                <p>Mastering Maths: Basics to Advance</p>
+            </div>
+            <div class="card">
+                <img src="5.jpeg" alt="English Course">
+                <h3>English</h3>
+                <p>Learn Complete English</p>
+            </div>
+            <div class="card">
+                <img src="4.jpeg" alt="Social Science Course">
+                <h3>Social Science</h3>
+                <p>Learn Social Science</p>
+            </div>
+            <div class="card">
+                <img src="3.jpeg" alt="Computer Science Course">
+                <h3>Computer Science</h3>
+                <p>Learn Computer Science</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Providing Education Creating Values.</p>
+        <input type="email" placeholder="Your Email">
+        <button class="btn-subscribe">Subscribe</button>
+        <div class="footer-links">
+            <div>About Us</div>
+            <div>Contact Us</div>
+            <div>Videos</div>
+            <div>Social Media</div>
+        </div>
+        <p>Harshit, yash and sejal &copy; 2024 Smart UI. All rights reserved.</p>
+    </footer>
+
+    <!-- Adaptability Control Button -->
+    <button id="toggle-control-panel" onclick="toggleControlPanel()">Customize UI</button>
+
+    <!-- Adaptability Control Panel -->
+    <div class="control-panel" id="control-panel" style="display: none;">
+        <h3>Customize UI</h3>
+        <label for="font-size">Font Size:</label>
+        <input type="range" id="font-size" min="12" max="24" value="16" onchange="changeFontSize(this.value)">
+
+        <label for="font-color">Font Color:</label>
+        <input type="color" id="font-color" onchange="changeFontColor(this.value)">
+
+        <label for="bg-color">Background Color:</label>
+        <input type="color" id="bg-color" onchange="changeBgColor(this.value)">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; /* Improved color contrast */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #f0f0f0; /* Improved readability */
+    text-decoration: none;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    background-image: url('bg.jpeg'); /* Add your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    color: #fff;
+    padding: 50px;
+    width: 100%; /* Set the width to 100% */
+    height: 250px; /* Adjust the height as needed */
+}
+
+
+.header h1 {
+    margin: 0;
+}
+
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.course-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Consistent spacing */
+}
+
+.card {
+    background-color: #f9f9f9;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #151414; /* Improved color contrast */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer input[type="email"] {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+#toggle-control-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ee0e0e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.control-panel {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Aligns items vertically center */
+}
+
+.logo img {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo span {
+    font-size: 24px; /* Adjust text size as needed */
+    color: #fff; /* Adjust text color as needed */
+}
+
+.header h1 {
+    display: inline; /* Keeps the cursor inline with the text */
+    position: relative; /* Required for cursor positioning */
+}
+
+.header h1::after {
+    content: '';
+    display: inline-block;
+    width: 2px; /* Width of the cursor */
+    height: 1.2em; /* Height to match text */
+    background-color: #fff; /* Cursor color */
+    animation: blink 0.7s step-end infinite; /* Blink animation */
+    position: absolute;
+    right: 0; /* Align cursor to the end of the text */
+    bottom: 0; /* Align cursor to the bottom of the text */
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent; /* Cursor disappears */
+    }
+}
+.header {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background: url('bg.jpeg') no-repeat center center; /* Use your background image */
+    background-size: cover; /* Cover the entire section */
+    color: #fff;
+    padding: 50px;
+}
+.btn-get-started {
+    background-color: #da0909;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust the value for desired spacing */
+}
+
+.login-section, .signup-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-section h2, .signup-section h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input, .signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-form button, .signup-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover, .signup-form button:hover {
+    background-color: #45a049;
+}
